@@ -14,6 +14,8 @@ public class GMLOutput {
 	
 	public void writeGML(Graph graph,String path) throws IOException {
 		OutputStream out = new FileOutputStream(new File(path));
+
+		
 		GMLWriter.outputGraph(graph, out);
 	}
 }
